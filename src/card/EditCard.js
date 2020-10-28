@@ -18,7 +18,7 @@ class EditCard extends Component {
     // console.log(id);
     this.setState({user_id: id});
     try {
-      const res = await axios.get(`http://localhost:5000/api/user/${id}`);
+      const res = await axios.get(`/api/user/${id}`);
       // console.log(res.data);
       
       this.setState({
